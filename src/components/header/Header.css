@@ -1,0 +1,42 @@
+.header_container{
+  display: flex;
+  justify-content:space-around;
+  align-items: center;
+  color: black;
+  position: relative;
+  margin-left: 7rem;
+  margin-right: 7rem;
+}
+
+.header_container h3{
+  margin-left: 2rem;
+  font-size: xx-large;
+}
+
+.searchBar{
+  display: flex;
+  align-items: center;
+}
+
+.searchBar input{
+  border: none;
+  border-radius: 10px;
+  background-color: #f6f6f8;
+  width: 20rem;
+  height: 2rem;
+}
+
+.storeServ{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.subHeader_container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  color: #f6f6f8;
+  background-color: black;
+}

@@ -1,0 +1,40 @@
+.submain_container{
+  display: flex;
+  margin-top: 0.5rem;
+}
+
+.img_container{
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+
+.swip_img_desc{
+  margin-left: 2rem;
+}
+.swip_img_desc h5{
+  text-transform: capitalize;
+  font-weight: light;
+}
+
+.testmonial_first{
+  background-color: #a580a1;
+}
+.testmonial_second{
+  background-color: #dcbbd3;
+}
+.testmonial_third{
+  background-color: #8ec1c3;
+}
+.testmonial_forth{
+  background-color: #edab91;
+}
+.testmonial_fifth{
+  background-color: #fcf1c4;
+}
+.testmonial_sixth{
+  background-color: #dcbbd3;
+}
