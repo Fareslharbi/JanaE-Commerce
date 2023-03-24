@@ -2,6 +2,9 @@ import React from 'react'
 import './LongSubMain.css'
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Pagination } from 'swiper'
+// Import Swiper styles
+import 'swiper/swiper.css';
+import 'swiper/css/pagination';
 
 import swipe_item from '../../../assists/swipe_item.png'
 import swipe_item1 from '../../../assists/swipe_item1.png'
@@ -9,9 +12,7 @@ import swipe_item2 from '../../../assists/swipe_item2.png'
 import swipe_item3 from '../../../assists/swipe_item3.png'
 import swipe_item4 from '../../../assists/swipe_item4.png'
 import swipe_item5 from '../../../assists/swipe_item5.png'
-// Import Swiper styles
-import 'swiper/swiper.css';
-import 'swiper/css/pagination';
+
 
 const LongSubMain = () => {
   return (

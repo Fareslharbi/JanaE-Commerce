@@ -11,8 +11,11 @@
   margin-top: 5rem;
   height: 370px;
   width: 80%;
+  transition: ease 500ms;
 }
-
+.offer_card:hover{
+  background-color: lightgray;
+}
 .offer_card img {
   width: 100%;
   height: auto;

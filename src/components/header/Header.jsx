@@ -12,7 +12,7 @@ const Header = () => {
   return (
     <>
     <div className='header_container'>
-      <h3>Jana</h3>
+      <h1>Jana</h1>
       <div className='searchBar'>
         <input type="text" className="searchBar" name="search" placeholder='What are you looking for?'/><BsSearch/>
       </div>

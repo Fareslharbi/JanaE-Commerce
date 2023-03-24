@@ -4,13 +4,11 @@
   align-items: center;
   color: black;
   position: relative;
-  margin-left: 7rem;
-  margin-right: 7rem;
+
 }
 
-.header_container h3{
-  margin-left: 2rem;
-  font-size: xx-large;
+.header_container h1{
+  font-size:35px;
 }
 
 .searchBar{
@@ -19,17 +17,26 @@
 }
 
 .searchBar input{
+  font-size: x-large;
+  padding-left: 1rem;
   border: none;
   border-radius: 10px;
   background-color: #f6f6f8;
-  width: 20rem;
-  height: 2rem;
+  width: 50rem;
+  height: 3rem;
+  margin-right: 1rem;
+}
+.searchBar input::placeholder{
+  font-size:medium;
+  padding-left: 1rem;
 }
 
 .storeServ{
   display: flex;
   align-items: center;
   justify-content: center;
+  gap: 1rem;
+  font-size: larger;
 }
 
 .subHeader_container{

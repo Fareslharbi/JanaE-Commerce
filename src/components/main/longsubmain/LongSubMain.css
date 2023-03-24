@@ -11,6 +11,11 @@
   margin-top: 5rem;
   height: 250px;
   width: 80%;
+  transition: ease 500ms;
+}
+
+.small_card:hover{
+  background-color: lightgray;
 }
 
 .small_card img {

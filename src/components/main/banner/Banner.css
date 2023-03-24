@@ -1,0 +1,32 @@
+.banner_container{
+  display: flex;
+}
+
+.banner_card {
+  padding-top: 1px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  text-align: left;
+  font-family: arial;
+  background-color: #f2f2f2;
+  border-radius: 10px 10px 0 0;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  height: 25.73rem;
+  transition: ease 500ms;
+}
+
+.banner_card.A{
+  background-color: #edac92;
+}
+.banner_card.B{
+  background-color: #964946;
+  color: #f2f2f2;
+}
+
+.banner_card h1{
+  padding-left: 2rem;
+}
+.banner_card p{
+  padding-left: 2rem;
+}
+
