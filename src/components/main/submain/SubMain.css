@@ -20,21 +20,26 @@
   font-weight: light;
 }
 
-.testmonial_first{
+.subMain_banner{
+  cursor: pointer;
+}
+.subMain_banner.A{
   background-color: #a580a1;
 }
-.testmonial_second{
+.subMain_banner.B{
   background-color: #dcbbd3;
 }
-.testmonial_third{
+.subMain_banner.C{
   background-color: #8ec1c3;
 }
-.testmonial_forth{
+.subMain_banner.D{
   background-color: #edab91;
 }
-.testmonial_fifth{
+.subMain_banner.E{
   background-color: #fcf1c4;
 }
-.testmonial_sixth{
+.subMain_banner.F{
   background-color: #dcbbd3;
 }
+
+

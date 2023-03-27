@@ -12,6 +12,8 @@
   height: 370px;
   width: 80%;
   transition: ease 500ms;
+  height: auto;
+  cursor: pointer;
 }
 .offer_card:hover{
   background-color: lightgray;
@@ -71,14 +73,10 @@
 }
 .offer_card button{
   background-color: transparent;
+  border: solid;
   border-radius: 10px;
   width: 60%;
   height: 8%;
-  border-color: black;
   transition: ease 500ms;
   font-size:medium;
-}
-
-.offer_card button:hover{
-  color: gray;
 }

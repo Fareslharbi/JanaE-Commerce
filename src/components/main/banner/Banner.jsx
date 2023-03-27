@@ -9,6 +9,40 @@ import './Banner.css'
 import banner_img from '../../../assists/banner_img.png'
 import banner_img1 from '../../../assists/banner_img1.png'
 const Banner = () => {
+  const dict_banner = [
+    {
+      id: 1, 
+      title: 'Clean Beauty from CAY SKIN',
+      desc: 'Protect against sun damage and get a natural-looking glow with SPF products for all skin tones.',
+      label: 'SNAP IT UP▸',
+      img: banner_img,
+      classID: 'banner_card A'
+    },
+    {
+      id: 2, 
+      title: 'The Natural Sculpted Look',
+      desc: "You're seeing it everywhere. Here's how to get it.You're seeing it everywhere. Here's how to get it.",
+      label: 'SHOP NOW▸',
+      img: banner_img1,
+      classID: 'banner_card B'
+    },
+    {
+      id: 3, 
+      title: 'Clean Beauty from CAY SKIN',
+      desc: 'Protect against sun damage and get a natural-looking glow with SPF products for all skin tones.',
+      label: 'SNAP IT UP▸',
+      img: banner_img,
+      classID: 'banner_card A'
+    },
+    {
+      id: 4, 
+      title: 'The Natural Sculpted Look',
+      desc: "You're seeing it everywhere. Here's how to get it.You're seeing it everywhere. Here's how to get it.",
+      label: 'SHOP NOW▸',
+      img: banner_img1,
+      classID: 'banner_card B'
+    },
+  ]
   return (
     <div className='banner_container'>
       <Swiper className="container small__container"
@@ -17,41 +51,22 @@ const Banner = () => {
         spaceBetween={30}
         slidesPerView={2}
         >
-        <SwiperSlide key='1' className='testmonial'>
-          <div className='banner_card A'>
-            <h1>Clean Beauty from CAY SKIN</h1>
-            <p>Protect against sun damage and get a natural-looking glow with SPF products for all skin tones.</p>
-            <h1>SNAP IT UP▸</h1>
-            <div><img src={banner_img} alt='img'/></div>
-          </div>
-        </SwiperSlide>
-      <SwiperSlide key='2' className='testmonial'>
-          <div className='banner_card B'>
-            <h1>The Natural Sculpted Look</h1>
-            <p>You're seeing it everywhere. Here's how to get it.You're seeing it everywhere. Here's how to get it.</p>
-            <h1>SHOP NOW▸</h1>
-            <div><img src={banner_img1} alt='img'/></div>
-          </div>
-        </SwiperSlide>
-        <SwiperSlide key='3' className='testmonial'>
-          <div className='banner_card A'>
-            <h1>Clean Beauty from CAY SKIN</h1>
-            <p>Protect against sun damage and get a natural-looking glow with SPF products for all skin tones.</p>
-            <h1>SNAP IT UP▸</h1>
-            <div><img src={banner_img} alt='img'/></div>
-          </div>
-        </SwiperSlide>
-        <SwiperSlide key='4' className='testmonial'>
-          <div className='banner_card B'>
-            <h1>The Natural Sculpted Look</h1>
-            <p>You're seeing it everywhere. Here's how to get it.You're seeing it everywhere. Here's how to get it.</p>
-            <h1>SHOP NOW▸</h1>
-            <div><img src={banner_img1} alt='img'/></div>
-          </div>
-        </SwiperSlide>
+          {
+            dict_banner.map(({id, title, desc, label, img, classID}) => {
+              return (
+                <SwiperSlide key={id} className='testmonial'>
+                  <div className={classID}>
+                    <h1>{title}</h1>
+                    <p>{desc}</p>
+                    <h1>{label}</h1>
+                    <img src={img} alt='img'/>
+                  </div>
+                </SwiperSlide>
+              )
+            })
+          }
       </Swiper>
     </div>
   )
 }
-
 export default Banner

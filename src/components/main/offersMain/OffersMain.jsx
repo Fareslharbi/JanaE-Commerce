@@ -13,7 +13,74 @@ import swipe_item5 from '../../../assists/offer_img5.png'
 import 'swiper/swiper.css';
 import 'swiper/css/pagination';
 
+
 const OffersMain = () => {
+  const dict_offers = [
+    {
+      id: 1,
+      img: swipe_item,
+      title:  'Complimentary La Mer Skincare Duo',
+      desc: "Try 14 samples of EADEMs bestselling Milk Marvel Serum",
+      desc1: "Complimentary with $150 La Mer purchase.* Beauty Insider members only. Online only *Exclusions/terms apply.",
+      btn: 'Apply'
+    },
+    {
+      id: 2,
+      img: swipe_item1,
+      title:  'Complimentary La Mer Skincare Duo',
+      desc: "Try 14 samples of EADEMs bestselling Milk Marvel Serum",
+      desc1: "Complimentary with $150 La Mer purchase.* Beauty Insider members only. Online only *Exclusions/terms apply.",
+      btn: 'Apply'
+    },
+    {
+      id: 3,
+      img: swipe_item2,
+      title:  'Complimentary La Mer Skincare Duo',
+      desc: "Try 14 samples of EADEMs bestselling Milk Marvel Serum",
+      desc1: "Complimentary with $150 La Mer purchase.* Beauty Insider members only. Online only *Exclusions/terms apply.",
+      btn: 'Apply'
+    },
+    {
+      id: 4,
+      img: swipe_item3,
+      title:  'Complimentary La Mer Skincare Duo',
+      desc: "Try 14 samples of EADEMs bestselling Milk Marvel Serum",
+      desc1: "Complimentary with $150 La Mer purchase.* Beauty Insider members only. Online only *Exclusions/terms apply.",
+      btn: 'Apply'
+    },
+    {
+      id: 5,
+      img: swipe_item4,
+      title:  'Complimentary La Mer Skincare Duo',
+      desc: "Try 14 samples of EADEMs bestselling Milk Marvel Serum",
+      desc1: "Complimentary with $150 La Mer purchase.* Beauty Insider members only. Online only *Exclusions/terms apply.",
+      btn: 'Apply'
+    },
+    {
+      id: 6,
+      img: swipe_item5,
+      title:  'Complimentary La Mer Skincare Duo',
+      desc: "Try 14 samples of EADEMs bestselling Milk Marvel Serum",
+      desc1: "Complimentary with $150 La Mer purchase.* Beauty Insider members only. Online only *Exclusions/terms apply.",
+      btn: 'Apply'
+    },
+    {
+      id: 7,
+      img: swipe_item5,
+      title:  'Complimentary La Mer Skincare Duo',
+      desc: "Try 14 samples of EADEMs bestselling Milk Marvel Serum",
+      desc1: "Complimentary with $150 La Mer purchase.* Beauty Insider members only. Online only *Exclusions/terms apply.",
+      btn: 'Apply'
+    },
+    {
+      id: 8,
+      img: swipe_item5,
+      title:  'Complimentary La Mer Skincare Duo',
+      desc: "Try 14 samples of EADEMs bestselling Milk Marvel Serum",
+      desc1: "Complimentary with $150 La Mer purchase.* Beauty Insider members only. Online only *Exclusions/terms apply.",
+      btn: 'Apply'
+    },
+  ]
   return (
     <div className='LongSubMain_container'>
       <h3>Jana's Offers</h3>
@@ -22,87 +89,21 @@ const OffersMain = () => {
         modules={[ Pagination]}
         slidesPerView={6}
         >
-        <SwiperSlide key='1' className='offer_swiper'>
-          <div className='offer_card'>
-            <img src={swipe_item} alt="card_img"/>
-            <h4>Complimentary La Mer Skincare Duo</h4>
-            <p>Try 14 samples of EADEM’s bestselling Milk Marvel Serum</p>
-            <p>Complimentary with $150 La Mer purchase.* Beauty Insider members only. Online only *Exclusions/terms apply.</p>
-            <button>Apply</button>
-          </div>
-        </SwiperSlide>
-        <SwiperSlide key='2' className='offer_swiper'>
-          <div className='offer_card'>
-            <img src={swipe_item1} alt="card_img"/>
-            <h4>Complimentary La Mer Skincare Duo</h4>
-            <p>Try 14 samples of EADEM’s bestselling Milk Marvel Serum</p>
-            <p>Complimentary with $150 La Mer purchase.* Beauty Insider members only. Online only *Exclusions/terms apply.</p>
-            <button>Apply</button>
-          </div>
-        </SwiperSlide>
-        <SwiperSlide key='2' className='offer_swiper'>
-          <div className='offer_card'>
-            <img src={swipe_item2} alt="card_img"/>
-            <h4>Complimentary La Mer Skincare Duo</h4>
-            <p>Try 14 samples of EADEM’s bestselling Milk Marvel Serum</p>
-            <p>Complimentary with $150 La Mer purchase.* Beauty Insider members only. Online only *Exclusions/terms apply.</p>
-            <button>Apply</button>
-          </div>
-        </SwiperSlide>
-        <SwiperSlide key='2' className='offer_swiper'>
-          <div className='offer_card'>
-            <img src={swipe_item3} alt="card_img"/>
-            <h4>Complimentary La Mer Skincare Duo</h4>
-            <p>Try 14 samples of EADEM’s bestselling Milk Marvel Serum</p>
-            <p>Complimentary with $150 La Mer purchase.* Beauty Insider members only. Online only *Exclusions/terms apply.</p>
-            <button>Apply</button>
-          </div>
-        </SwiperSlide>
-        <SwiperSlide key='2' className='offer_swiper'>
-          <div className='offer_card'>
-            <img src={swipe_item4} alt="card_img"/>
-            <h4>Complimentary La Mer Skincare Duo</h4>
-            <p>Try 14 samples of EADEM’s bestselling Milk Marvel Serum</p>
-            <p>Complimentary with $150 La Mer purchase.* Beauty Insider members only. Online only *Exclusions/terms apply.</p>
-            <button>Apply</button>
-          </div>
-        </SwiperSlide>
-        <SwiperSlide key='2' className='offer_swiper'>
-          <div className='offer_card'>
-            <img src={swipe_item5} alt="card_img"/>
-            <h4>Complimentary La Mer Skincare Duo</h4>
-            <p>Try 14 samples of EADEM’s bestselling Milk Marvel Serum</p>
-            <p>Complimentary with $150 La Mer purchase.* Beauty Insider members only. Online only *Exclusions/terms apply.</p>
-            <button>Apply</button>
-          </div>
-        </SwiperSlide>
-        <SwiperSlide key='2' className='offer_swiper'>
-          <div className='offer_card'>
-            <img src={swipe_item} alt="card_img"/>
-            <h4>Complimentary La Mer Skincare Duo</h4>
-            <p>Try 14 samples of EADEM’s bestselling Milk Marvel Serum</p>
-            <p>Complimentary with $150 La Mer purchase.* Beauty Insider members only. Online only *Exclusions/terms apply.</p>
-            <button>Apply</button>
-          </div>
-        </SwiperSlide>
-        <SwiperSlide key='2' className='offer_swiper'>
-          <div className='offer_card'>
-            <img src={swipe_item1} alt="card_img"/>
-            <h4>Complimentary La Mer Skincare Duo</h4>
-            <p>Try 14 samples of EADEM’s bestselling Milk Marvel Serum</p>
-            <p>Complimentary with $150 La Mer purchase.* Beauty Insider members only. Online only *Exclusions/terms apply.</p>
-            <button>Apply</button>
-          </div>
-        </SwiperSlide>
-        <SwiperSlide key='2' className='offer_swiper'>
-          <div className='offer_card'>
-            <img src={swipe_item2} alt="card_img"/>
-            <h4>Complimentary La Mer Skincare Duo</h4>
-            <p>Try 14 samples of EADEM’s bestselling Milk Marvel Serum</p>
-            <p>Complimentary with $150 La Mer purchase.* Beauty Insider members only. Online only *Exclusions/terms apply.</p>
-            <button>Apply</button>
-          </div>
-        </SwiperSlide>
+        {
+          dict_offers.map(({id, title, img, desc, desc1, btn}) => {
+              return (
+                <SwiperSlide key={id} >
+                  <div className='offer_card'>
+                    <img src={img} alt="card_img"/>
+                    <h4>{title}</h4>
+                    <p>{desc}</p>
+                    <p>{desc1}</p>
+                    <button>{btn}</button>
+                  </div>
+                </SwiperSlide>
+              ) 
+              })
+          }
       </Swiper>
     </div>
   )

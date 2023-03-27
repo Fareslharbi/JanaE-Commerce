@@ -5,22 +5,31 @@ import {BsLinkedin} from 'react-icons/bs'
 import {FaGithub} from 'react-icons/fa'
 
 const Footer = () => {
-  return (
+  const dict_departments = [
+    {id: 1, department: 'New'},
+    {id: 2, department: 'Sales & Offers'},
+    {id: 3, department: 'Design & Printing'},
+    {id: 4, department: 'Fashion & Design'},
+    {id: 5, department: 'Electronic Applications'},
+    {id: 6, department: 'Educational Services'},
+    {id: 7, department: 'Accessories'},
+    {id: 8, department: 'Cosmetics & perfumes'},
+    {id: 9, department: 'Photography'},
+    {id: 10, department: 'Parties and Gifts'},
+    {id: 11, department: 'Decoration'},
+    {id: 12, department: 'Handicrafts'},
+  ]
+  return ( 
     <footer>
       <a href="/#" className='footer__logo'>Jana Comapny</a>
       <ul className='permalinks'>
-        <li><a href="#about" className='lang_about'>Fashion & Design</a></li>
-        <li><a href="#experience" className='lang_exp'>Accessories</a></li>
-        <li><a href="#services" className='lang_ser'>Cosmetics & perfumes</a></li>
-        <li><a href="#portfolio" className='lang_portfo'>Design & Printing</a></li>
-        <li><a href='#testimonials' className='lang_testttt'>Photography</a></li>
-        <li><a href='#certifications' className='lang_certification11'>Handicrafts</a></li>
-        <li><a href="#contact" className='lang_con'>Parties and Gifts</a></li>
-        <li><a href="#contact" className='lang_con'>Cooking & Sweets</a></li>
-        <li><a href="#contact" className='lang_con'>Coffee & Spices</a></li>
-        <li><a href="#contact" className='lang_con'>Retail Sale</a></li>
-        <li><a href="#contact" className='lang_con'>Decoration</a></li>
-        <li><a href="#contact" className='lang_con'>Educational Services & Electronic Applications</a></li>
+        {
+          dict_departments.map(({id, department}) => {
+            return (
+              <li><a id={id} href="#about" className='lang_about'>{department}</a></li>
+            )
+          })
+        }
       </ul>
       <div className="footer__socials">
         <a href="https://linkedin.com"><BsLinkedin/></a>
