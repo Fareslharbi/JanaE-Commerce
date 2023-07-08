@@ -26,14 +26,14 @@ footer a {
   margin: 0 auto 3rem;
 }
 
-.permalinks li a{
+.permalinks  a{
   padding: 1rem;
   transition: ease 500ms;
 }
-.permalinks li a:hover{
+.permalinks  a:hover{
   border: solid 1px;
   border-color: white;
-  border-radius: 15px;
+  border-radius: 10px;
 }
 .footer__socials{
   display: flex;
@@ -70,7 +70,14 @@ footer a {
   }
   .footer__socials{
       margin-bottom: 2.6rem;
+      margin-left: 3rem;
+      
   }
+  .footer__copyright{
+    margin-bottom: 2.6rem;
+    margin-left: 3rem;
+    
+}
 }
 
 
